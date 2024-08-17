@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "NFT_wall_art",
+  "builds": [
+    {
+        "src": "/index.js",
+        "use": "@vercel/node"
+    }
+]
+}

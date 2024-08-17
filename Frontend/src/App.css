@@ -1,0 +1,162 @@
+.sidebar-menu-scroll {
+  height: calc(100% - 70px);
+  margin-top: 70px;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-content {
+  pointer-events: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+[data-simplebar].simplebar-dragging .simplebar-track {
+  pointer-events: all;
+}
+
+[data-simplebar] {
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.simplebar-scrollbar {
+  position: absolute;
+  right: 2px;
+  width: 6px;
+  min-height: 10px;
+}
+
+.simplebar-scrollbar:before {
+  position: absolute;
+  content: "";
+  background: #a2adb7;
+  border-radius: 7px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+.simplebar-scrollbar.simplebar-visible:before {
+  /* When hovered, remove all transitions from drag handle */
+  opacity: 0.5;
+  -webkit-transition: opacity 0s linear;
+  transition: opacity 0s linear;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.75rem 0.75rem;
+  /* background-color: var(--bs-table-bg); */
+  border-bottom-width: 1px;
+  -webkit-box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+  color: #495057;
+}
+
+.react-confirm-alert-overlay {
+  background: rgb(128 128 128 / 90%) !important;
+}
+
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
